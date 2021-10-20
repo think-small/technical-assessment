@@ -34,7 +34,7 @@ namespace TechnicalAssessment.Models
         {
             foreach (var item in Items)
             {
-                Console.WriteLine($"{item.Quantity} {(item.Product.IsImported ? "imported " : "")}{item.Product.Name} at {item.Cost}");
+                Console.WriteLine($"{item.Quantity} {(item.Product.IsImported ? "imported " : "")}{item.Product.Name}: {item.Cost}");
             }
             Console.WriteLine($"Sales Taxes: {TotalTax}");
             Console.WriteLine($"Total: {GrandTotal}");
